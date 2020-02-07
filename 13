@@ -1,0 +1,335 @@
+This PR contains the following updates:
+
+| Package | Type | Update | Change |
+|---|---|---|---|
+| [contrib.go.opencensus.io/exporter/stackdriver](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver) | require | minor | `v0.6.0` -> `v0.13.0` |
+
+---
+
+### Release Notes
+
+<details>
+<summary>census-ecosystem/opencensus-go-exporter-stackdriver</summary>
+
+### [`v0.13.0`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/releases/v0.13.0)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.12.9...v0.13.0)
+
+### Changes Since v0.12.9
+
+[`ab68e2a`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/ab68e2a40809b13b9e06ac2135d2549a6a984d62) PushTraceProto for batch uploading in a collector ([#&#8203;249](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/249))
+
+### [`v0.12.9`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/releases/v0.12.9)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.12.8...v0.12.9)
+
+### Changes since v0.12.8
+
+[`a428e35`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/a428e35cb99f2a327af67f8b42e438250776a461) fix goimports error in test.pb.go file. ([#&#8203;248](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/248))
+[`626e69e`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/626e69eeee9db2d84284abdbfe6f2c27d37d74e8) trace: allow for concurrent uploads to Stackdriver ([#&#8203;246](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/246))
+[`1cdca91`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/1cdca918b59d4cd456dc1bbfb4b655159da9a62e) Use standard label name for location. ([#&#8203;241](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/241))
+[`59d068f`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/59d068f8d8ff5b653916aa30cdc4e13c7f15d56e) Add GetMetricPrefix func as an option to support dynamic custom metric prefix ([#&#8203;238](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/238))
+[`61e3caa`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/61e3caa20a46015704f45956535fe83133eaf62e) Rename metrics_test_utils.go to avoid dependency on testing package. ([#&#8203;233](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/233))
+[`2827354`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/2827354c49e8f66ef4a72affb32d1040213092ae) stop ignoring errors while processing metrics. ([#&#8203;236](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/236))
+
+### [`v0.12.8`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/releases/v0.12.8)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.12.7...v0.12.8)
+
+### Changes since v0.12.7
+
+[`9366d36`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/9366d3634e70bea85a87d33f6f23e5f9c673f8fa) Add option to provide resource based on metric descriptor. ([#&#8203;231](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/231))
+[`8033da9`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/8033da95f7c7137ad0d0fb3a3c050c1fa23bce2a) Small optimization to avoid unnecesarry allocations. ([#&#8203;228](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/228))
+[`9cc5395`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/9cc5395b360cca77c6989e2ae39acdb1f102c6b4) add wrapper around ioutil.ReadFile. ([#&#8203;226](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/226))
+[`3504ffa`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/3504ffa3a1e24241c6a80658adfbf0c93f483de8) fix typo. ([#&#8203;225](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/225))
+[`e2f5be5`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/e2f5be598129fcff668879a49a5d43078d97dd5b) Resource per metric ([#&#8203;224](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/224))
+[`76f086b`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/76f086b55d08a5712fffeef3a071a3f411ae7928) Unit test using input and output proto files ([#&#8203;223](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/223))
+[`4339afa`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/4339afab4a99680088eb91323f67d534bd4acf7c) add resource detector test. ([#&#8203;219](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/219))
+[`2798eee`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/2798eee89dc6f49c3a1f6df7df8f280681139da3) Apply timeout to each worker in metrics_proto export ([#&#8203;222](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/222))
+[`633d9ea`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/633d9eaf679a7cf6fc85b331ff6dcd8d80979c2a) Set a minimum size for reqsChan in batcher ([#&#8203;221](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/221))
+[`6f7321c`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/6f7321c1a22040f673b405e8e337b8f1ca7fc205) Allow sending CreateTimeSeriesReq in multiple goroutines ([#&#8203;213](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/213))
+[`717ac5c`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/717ac5c99f1015babeb01af6d8b6200d238b4dc6) add test to handle multiple timeseries for Summary metrics. ([#&#8203;220](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/220))
+[`7ea215e`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/7ea215e331a1224b93e10368b90ec2886cbd8db6) Enforce consistent logic for CreateMetricDescriptor for stats and metrics ([#&#8203;217](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/217))
+[`e1ae7ed`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/e1ae7ede1bac90a934f5b3b98a55c0bb989ae1d5) use localhost to prevent security pop-up on macos. ([#&#8203;216](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/216))
+[`a3453a5`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/a3453a5458721b1b75efbf0f5664a11945adb03e) Unit test ([#&#8203;215](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/215))
+[`470fd47`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/470fd47fad7f80bfbd2843da0ee66fd9c6b423b0) Fix convertSummaryMetrics ([#&#8203;214](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/214))
+[`c4af412`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/c4af412afbb315f29868a66d81fb4f2fe97c49a4) Upgrade dependencies ([#&#8203;210](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/210))
+[`c5e91fb`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/c5e91fb07db21d32664cceb691421968e659f2a8) Explicitly set HasValue to true for LabelValue ([#&#8203;209](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/209))
+[`ac1282a`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/ac1282a73b13708e2eee44f85a58f4763e068df9) Fix equivalence test ([#&#8203;208](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/208))
+[`b2a517b`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/b2a517bda184b183a206dbf0e3b8104cf1802ebe) Use endpoint instead of connection in equivalence_test ([#&#8203;207](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/207))
+[`619996f`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/619996faba23cac02b412ece66587d76e1dee78d) Use complete address when return from create fake server ([#&#8203;206](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/206))
+[`746b104`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/746b1042445722894c2ba419b0f93e2db6c2916a) go mod tidy ([#&#8203;205](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/205))
+[`71d3e05`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/71d3e051262b444d07fd478ccdbdda7c2c30cbbf) Remove unnecessary comment, check errors for PushMetricsProto ([#&#8203;204](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/204))
+[`d50bb4a`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/d50bb4a74d532b681d359adf3a7590727f53dbb5) Do not try to start trace exporter in TestExportTimeSeriesWithDifferentLabels ([#&#8203;203](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/203))
+[`6ee7f96`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/6ee7f9652d2a9e707fea22c56d06235db6289426) Remove leading 0 in histogram buckets in example ([#&#8203;201](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/201))
+
+### [`v0.12.7`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/releases/v0.12.7)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.12.6...v0.12.7)
+
+### Changes since v0.12.6
+
+[`2fdcf7b`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/2fdcf7b4087e713a439fe7a489b3c316deaa97f2) Reproduce bug in stackdriver exporter. ([#&#8203;199](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/199))
+[`b5c7a2c`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/b5c7a2c97c49070b72116e7fee88a02ed87da99a) Enable test coverage. ([#&#8203;200](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/200))
+[`dd3a274`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/dd3a274274090246732df6710e62cd55bf3830d6) Fix label matching and add tests ([#&#8203;198](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/198))
+[`b183b1e`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/b183b1e7521cf384cf0884d196b86467ea0d3c84) Fix slice allocation ([#&#8203;197](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/197))
+
+### [`v0.12.6`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/releases/v0.12.6)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.12.5...v0.12.6)
+
+### Changes since v0.12.2
+
+<details>
+  <summary>Click to expand!</summary>
+  
+0a559987d124eed2bb7cb995d6d34c27d2ec771c Use NewReader for metrics reader init (#&#8203;195)
+321e5491efd71b34933084c40685c2395e49210a Fix incorrect slice creation (#&#8203;196)
+3b40441f0c7adf855317ffe70162b5175274cb77 Add a metric batcher which preallocates batch sizes. (#&#8203;194)
+3a3e471282b824d60beedf03c162caa7c8913266 Fix proto import (#&#8203;192)
+7cac5ce7e114fa2017de10cf6ff18bfa6c9ce200 Revert "Remove support for exporting ViewData (#&#8203;188)" (#&#8203;191)
+211cb75c1ba628c16a9c792791fe31c3663b9fc0 fix example to use new api to start and stop exporting. (#&#8203;190)
+4b7f30648a4f2cf529cecb4274f016b9cc30df7e Remove support for exporting ViewData (#&#8203;188)
+97b79b6a962a56497be534c3b5307fb719be02e5 Rename ExportMetricsProtoSync to ExportMetricsProto (#&#8203;189)
+93f882d60731c5025fbb2b86e3116018490abba4  Remove the batching version for proto exporter (#&#8203;187)
+b0cbe77587ebe726c8dc9d4d00101c28c7ac2527 Remove outdated option GetMonitoredResource (#&#8203;186)
+a8e01fdd5a6607af4a76a3ab56ee35a3beb27e0e Remove mandatory opencensus_task label from node and respect metric prefix (#&#8203;184)
+6c1c12f471e75c93b00d365d450df73f524d4878 Remove Gopkg support (#&#8203;185)
+7449e7d1712befc2b552ffbb61864211aaeaba16 Fix unit for cumulative metrics and minor cleanups (#&#8203;183)
+7bb4fd6a8ca7d3e073e1a36b31a3de7f5d9ac823 Presanitize all the default keys and metric label keys. (#&#8203;181)
+270bb3982a86dba94348bfafa769ba36f851bfd4 Small cleanup of the return values (#&#8203;180)
+9762c69fa18fc8226ba77f8440f3dd8e1d19d767 Set MetricKind and ValueType when sending TimeSeries (#&#8203;182)
+ffafe44d33adfbe54f8ef15a040e77258997447d Cache seen resources for each export request (#&#8203;179)
+8a4403279a7a0d80ed3d5df10c41097b7207a337 Add an experimental API that exports metrics proto synchronously (#&#8203;178)
+bfde7f173ae266b9691f9f32da14b9f42e0c0045  Add mapping for k8s node resource (#&#8203;177)
+bf39ce456bd8c6e2e3e37ef9775ed8b10628feca Upgrade dependencies in go.mod (#&#8203;176)
+5e806e09a6760cacaef80b2281891eabf021582b Added mapping for kubernetes pod resource (#&#8203;174)
+6850d2e00d7dfe4886f7e4773bf9f05e39296d92 Upgrade dependencies in go.mod (#&#8203;172)
+655917ad76e36b904639dac831d70fcee172b903 Use MetricServiceServer in fakeMetricService. (#&#8203;168)
+1aade253a637460a3dac7e96abe9ae9b5e3cc2ed Fix handling errors in when failing to upload metrics proto (#&#8203;171)
+e19adcf31cc85e158538dcd7e742e1d54d80f23b Don't use a timeout context when creating the metrics client. (#&#8203;166)
+09504ed717c748c8fd802ba78924d6ca322c27d8 print location detection error only when running on GCE. (#&#8203;165)
+0954e43d9c22f47fa4849cc9973e6c835a5af929 Remove unnecessary logging (#&#8203;131)
+91082aee6f7cfa0169d7b6e890129123bd859ef8 Add resource translation readme file. (#&#8203;163)
+
+</details>
+
+### [`v0.12.5`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.12.4...v0.12.5)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.12.4...v0.12.5)
+
+### [`v0.12.4`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.12.3...v0.12.4)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.12.3...v0.12.4)
+
+### [`v0.12.3`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.12.2...v0.12.3)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.12.2...v0.12.3)
+
+### [`v0.12.2`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/releases/v0.12.2)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.12.1...v0.12.2)
+
+### Complete list of changes since v0.12.1
+
+[`68e3d74`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/68e3d742b03c099c35428443886e65d9587c8d76) Copy resources when converting summary metrics. ([#&#8203;162](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/162))
+
+### [`v0.12.1`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/releases/v0.12.1)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.12.0...v0.12.1)
+
+### Complete list of changes since v0.12.0
+
+[`3ea76e9`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/3ea76e9e8292eb299c803d9710a2ebb235bbd64e) use container type resource instead of k8s type for resource transfomration. ([#&#8203;160](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/160))
+
+### [`v0.12.0`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/releases/v0.12.0)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.11.1...v0.12.0)
+
+### Important Changes
+
+-   Added versioned dependency to [resource package](https://togithub.com/census-ecosystem/opencensus-go-resource). 
+-   Added support for transforming summary metrics to Cummulatives and Gauges.
+
+### Complete list of changes since release v0.11.1
+
+[`5d4eb99`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/5d4eb993a146e8f38c851bb1abf5b91a7a217791) transform resources for metrics exported via ExportMetricsProto api ([#&#8203;158](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/158))
+[`69e294b`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/69e294bf790c95facb4afe9144c6966d290ccf84) Fix resource mapping. ([#&#8203;155](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/155))
+[`3a2251b`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/3a2251bcd283d9fd5807fcbfeea7548bba4508cd) convert summary metrics to cumulatives and gauges. ([#&#8203;152](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/152))
+
+### [`v0.11.1`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.11.0...v0.11.1)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.11.0...v0.11.1)
+
+### [`v0.11.0`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/releases/v0.11.0)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.10.2...v0.11.0)
+
+### Important Changes
+
+-   Fixed resource assignment in GKE and GCE environment. This was broken by release v0.10.0
+
+### Complete list of changes since release v0.10.0
+
+[`9f1fc3b`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/9f1fc3ba8f2b42fb509d97bbd60290aa46ec3fd5) add support for label key description. ([#&#8203;136](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/136))
+[`5cd96ff`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/5cd96ffaea49afc6b4efb90f6e28df11ad27143a) fix golint and add Makefile. ([#&#8203;138](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/138))
+[`433871b`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/433871bd6e79575d6ffbbd10add24d3ab1f90a9c) Fix resource assignment in GKE and GCE environment when using metrics exporter. ([#&#8203;139](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/139))
+[`b39028f`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/b39028f5415873cc78bddf1af6d4ac1b50a47e0d) add issue template ([#&#8203;137](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/137))
+[`4351271`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/4351271b777d160d27010a22de3e41fd07335556) Don't overwrite agent label if already set ([#&#8203;132](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/132))
+[`aed34d9`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/aed34d979000b33eddca826e9842afaab912bf54) Update oc version in go.mod. ([#&#8203;129](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/129))
+[`c34b175`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/c34b1755e0aacd6a6a77d44f9681991b7cd32642) Upgrade dependencies in go.mod ([#&#8203;125](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/125))
+[`f6ea5dc`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/f6ea5dc54f1ebc83a221debe83c5cb564c250e8d) Use cmp instead of reflect and json in tests. ([#&#8203;122](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/122))
+
+### [`v0.10.2`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.10.1...v0.10.2)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.10.1...v0.10.2)
+
+### [`v0.10.1`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.10.0...v0.10.1)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.10.0...v0.10.1)
+
+### [`v0.10.0`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/releases/v0.10.0)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.9.2...v0.10.0)
+
+### Metric Support
+
+This release supports a new [api](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/blob/e393203a62e3c9286501f3195fe2f2ca1e35e115/stackdriver.go#L359) to consume [metrics data model](https://togithub.com/census-instrumentation/opencensus-specs/blob/master/metrics/Metrics.md) and export it to stackdriver backend. The previous [api](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/blob/e393203a62e3c9286501f3195fe2f2ca1e35e115/stackdriver.go#L349) consumed [view data model](https://togithub.com/census-instrumentation/opencensus-specs/blob/master/stats/Export.md#viewdata). Both apis are supported and pervious api will continue to work as before.
+
+Additional apis, [StartMetricsExporter](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/blob/e393203a62e3c9286501f3195fe2f2ca1e35e115/stackdriver.go#L377) and [StopMetricsExporter](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/blob/e393203a62e3c9286501f3195fe2f2ca1e35e115/stackdriver.go#L381) are introduced to work with new model of [Interval Reader](https://godoc.org/go.opencensus.io/metric/metricexport#IntervalReader) and [Reader](https://godoc.org/go.opencensus.io/metric/metricexport#Reader) introduced in version [0.20.0](https://togithub.com/census-instrumentation/opencensus-go/tree/v0.20.0) of OpenCensus Go library. The reader allows to read metrics from all producers registered with the library. StartMetricsExporter starts the interval reader which periodically reads metrics from all producers and exports them to the backend.
+
+#### Using Metrics Data Model (New)
+
+```go
+    exporter := stackdriver.NewExporter(stackdriver.Option{})
+    exporter.StartMetricsExporter()
+    defer exporter.StopMetricsExporter()
+```
+
+#### Using View Data Model (Old)
+
+```go
+    exporter := stackdriver.NewExporter(stackdriver.Option{})
+    view.RegisterExporter(exporter)
+```
+
+**Note: Use only one approach. Using both approach simultaneously will result into unspecified behavior.**
+
+### Important Fixes
+
+[`dc2fe43`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/dc2fe43961b73c1a17ec6a11e91b6fd22d0da632) Batch time series with different label values into same request. ([#&#8203;119](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/119))
+
+### Complete List of changes since previous release.
+
+[`e393203`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/e393203a62e3c9286501f3195fe2f2ca1e35e115) add Start and Stop function for metrics exporter. ([#&#8203;121](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/121))
+[`dc2fe43`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/dc2fe43961b73c1a17ec6a11e91b6fd22d0da632) Batch time series with different label values into same request. ([#&#8203;119](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/119))
+[`0ca8377`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/0ca837717ac89caa125254b26ca149cc5c4381d7) add support for exporting metrics data model ([#&#8203;109](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/109))
+[`27663a7`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/27663a7c6d7e75433f26ec7ffb3b33bc2b1067c2) Fix an issue with multiple calls of Autodetec func ([#&#8203;117](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/117))
+[`81dc1cd`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/81dc1cded66aa4c95ef161923b61e41e17073f89) Update go.mod and go.sum. ([#&#8203;113](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/113))
+[`0b43b4e`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/0b43b4e666329dab6930ed684fbf9cda49af4911) Remove exemplar for now. ([#&#8203;112](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/112))
+[`fff47fb`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/fff47fbfe49b3f761e7d420df3adddb6b2d19ef1) Fix dependency issues when GO111MODULE is disabled. ([#&#8203;111](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/111))
+[`16fd214`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/16fd214bfd75b515d5cc7e4889d2b898a643fd9d) turn on go11 module ([#&#8203;110](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/110))
+[`eb72365`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/eb723656ad6e385af5b5d4c37f268818b10489a4) Fix metric descriptor convertion. ([#&#8203;108](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/108))
+[`199f933`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/199f93316daf796dfcb2440ed976c3340dd76d30) rename metrics.go to metrics_proto.go. ([#&#8203;107](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/107))
+[`ed9eca6`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/ed9eca6071337a9a783feee26634869474d722e2) Change ExportMetric api to ExportMetricProto ([#&#8203;106](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/106))
+[`e9b8671`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/e9b86715d3e7633a113801929cbb03a36a00ce64) Revert "change ExportMetric api to ExportMetricProto ([#&#8203;104](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/104))" ([#&#8203;105](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/105))
+[`bf0d8a4`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/bf0d8a46b0afa4238b3d5c0eb1647f5e42a0d4cc) change ExportMetric api to ExportMetricProto ([#&#8203;104](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/104))
+[`ab5a58a`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/ab5a58af316a529613aadf9f50eeed1b6f044b2f) Upgrade oc-proto version and fix errors. ([#&#8203;102](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/102))
+[`4ef0c69`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/4ef0c6954dc5ecc9fe32b43df475008c5a2454ca) update .gitignore to exclude .idea ([#&#8203;97](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/97))
+[`9fed8be`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/9fed8bef8545b5cda39608d8de6c7715851e60b8) Remove instance-id label from k8s_container resource. ([#&#8203;94](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/94))
+[`aaad73f`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/aaad73faf0c564cf8d72c34ce983973c3d563e19) Fix k8s_container resource labels. ([#&#8203;93](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/93))
+[`14131f5`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/14131f5dcb0d151f0513f0cc3725eef31b7f6e8c) add zero bucket if not present. ([#&#8203;89](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/89))
+[`d2e06c1`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/d2e06c1b0799388e52a29d4e6ad76cfde657e7f5) Distinguish between gke_container and k8s_container monitored resource type ([#&#8203;90](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/90))
+[`91f15dd`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/91f15ddbe51775422a3cea78c358eb1f82d47748) go.mod: update dependencies and tidy up ([#&#8203;88](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/88))
+[`88d38dc`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/88d38dcdd3435d86fe1eaedce238ce44d3b852f5) Add support for Float64 attribute. ([#&#8203;86](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/86))
+[`7d76817`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/7d76817a6490c072d4870e5097cd022cb7f66aeb) Integrate with core resource and known detectors ([#&#8203;84](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/84))
+[`c06c82c`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/c06c82c832edca4eaf7b0241bd655560a1be0346) skip equality check for cached metric descriptor for built-in metrics. ([#&#8203;81](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/81))
+[`0f284fd`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/0f284fd583be5f531898999bc94f24f786c16e33) skip creating metric descriptor for stackdriver built-in metrics. ([#&#8203;77](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/77))
+
+### [`v0.9.2`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.9.1...v0.9.2)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.9.1...v0.9.2)
+
+### [`v0.9.1`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/releases/v0.9.1)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.9.0...v0.9.1)
+
+With these release, we've fixed a years-long standing issue in which uploading duplicate metrics within the same TimeSeries would cause this kind of error
+
+```shell
+err: rpc error: code = InvalidArgument desc = One or more TimeSeries could not be written:
+Field timeSeries[?] had an invalid value: Duplicate TimeSeries encountered.
+Only one point can be written per TimeSeries per request.: timeSeries[?]
+```
+
+By duplicate metrics, meaning those metrics that share the same "Type"/"Name" e.g. for illustrative purposes
+
+    {
+        "name": "projects/census-demos",
+        "time_series": [
+            {
+                "metric": {
+                    "type": "custom.googleapis.com/opencensus/oce/dev/latency"
+                },
+                "points": [<points...>]
+            },
+            {
+                "metric": {
+                    "type": "custom.googleapis.com/opencensus/oce/dev/latency"
+                },
+                "points": [<other_points...>]
+            }
+        ]
+    }
+
+which had plagued even the view.Exporter aka OpenCensus StatsExporter from day 1.
+
+With the PR [#&#8203;74](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/pull/74) to fix issue [#&#8203;73](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/73), there is a deduplication process that prevents putting duplicated Metrics in the same CreateTimeSeriesRequest.
+
+The above issue [#&#8203;73](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/73) was exacerbated when Stackdriver Metrics exporter was added to the OpenCensus Agent and metrics were streamed in from various sources concurrently.
+
+### [`v0.9.0`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/releases/v0.9.0)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.8.0...v0.9.0)
+
+With this release, this Stackdriver exporter now accepts OpenCensus Proto Metrics and converts them into Stackdriver Metrics. This is complementary to the first exporter which received view.Data aka OpenCensus Stats and converted those to Stackdriver Metrics.
+
+The output of exporting OpenCensus Proto Metrics and OpenCensus stats aka view.Data is exactly the same and enforced by tests. This ensures that if a program was running alright before while using view.Data, that with Proto Metrics it will run transparently too.
+
+### [`v0.8.0`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/releases/v0.8.0)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.7.0...v0.8.0)
+
+[`2b7f4fc`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/2b7f4fc) Add timeouts; make span size buffer limit precise ([#&#8203;58](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/58))
+
+### [`v0.7.0`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/releases/v0.7.0)
+
+[Compare Source](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/compare/v0.6.0...v0.7.0)
+
+[`f6033e3`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/f6033e3) Add GetMonitoredResource option ([#&#8203;46](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/46))
+[`2c06ade`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/2c06ade) Allow customizing the metric type and display name ([#&#8203;44](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/44))
+[`9f333b4`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/9f333b4) Add go modules support ([#&#8203;39](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/39))
+[`506554d`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/506554d) Update reporting period in the example to 60s. ([#&#8203;38](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/38))
+[`2f26a5d`](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/commit/2f26a5d) Do not use zero defaults for bundle delays ([#&#8203;34](https://togithub.com/census-ecosystem/opencensus-go-exporter-stackdriver/issues/34))
+
+</details>
+
+---
+
+### Renovate configuration
+
+:date: **Schedule**: At any time (no schedule defined).
+
+:vertical_traffic_light: **Automerge**: Disabled by config. Please merge this manually once you are satisfied.
+
+:recycle: **Rebasing**: Whenever PR becomes conflicted, or if you tick the rebase/retry checkbox below.
+
+:no_bell: **Ignore**: Close this PR and you won't be reminded about this update again.
+
+---
+
+ - [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check this box
+
+---
+
+This PR has been generated by [WhiteSource Renovate](https://renovate.whitesourcesoftware.com). View repository job log [here](https://app.renovatebot.com/dashboard#ESA-Security-Group/go-cloud).
